@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.luan_luna.aula3_testes">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/MAIN_LABEL"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".MainActivity">
+        </activity>
+
+        <activity android:name=".ActivityTriplicar" android:label="@string/TRIPLICAR">
+            <intent-filter>
+                <action android:name="MULTIPLICAR" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="TRIPLICAR" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ActivityDuplicar" android:label="@string/DUPLICAR">
+            <intent-filter>
+                <action android:name="MULTIPLICAR" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="DUPLICAR" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
