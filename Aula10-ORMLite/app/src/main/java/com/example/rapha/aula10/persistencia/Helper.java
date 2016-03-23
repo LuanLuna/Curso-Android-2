@@ -37,6 +37,7 @@ public class Helper extends OrmLiteSqliteOpenHelper{
         try {
             TableUtils.dropTable(connectionSource, Aluno.class, true);
             TableUtils.dropTable(connectionSource, Professor.class, true);
+            onCreate(sqLiteDatabase, connectionSource);
         } catch (SQLException e) {
             e.printStackTrace();
         }
